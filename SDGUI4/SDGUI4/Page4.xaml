@@ -1,0 +1,44 @@
+﻿<Page x:Class="SDGUI4.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="506" d:DesignWidth="762"
+	Title="Tester Set-up">
+
+    <Grid>
+        <Label Content="Follow the instructions below:" HorizontalAlignment="Left" Margin="43,107,0,0" VerticalAlignment="Top" Height="28" Width="234"/>
+        <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Margin="410,452,0,32" VerticalAlignment="Center" Width="72" Click="Next_Click" Background="{DynamicResource Brush01}"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="306,452,0,32" VerticalAlignment="Center" Width="72" Background="{DynamicResource Brush01}" Click="Back_Click"/>
+        <Image HorizontalAlignment="Left" Height="269" Margin="333,107,0,0" VerticalAlignment="Top" Width="402" Source="Images/sitting in front of computer (2).jpg"/>
+        <ProgressBar HorizontalAlignment="Center" Height="15" Margin="158,28,148,0" VerticalAlignment="Top" Width="456" Value="75" ValueChanged="ProgressBar_ValueChanged"/>
+        <Label Content="Please Complete the Tester Set-up" Margin="10,58,502,421" FontWeight="Bold"/>
+        <Label Content="1.) Sit in a stationary chair facing &#xA;     computer screen&#xA;&#xA;2.) Place chin comfortably in the headrest so &#xA;     that head directly faces monitor&#xA;&#xA;3.) Place hands gently on table  in front of headrest&#xA;&#xA;&#xA;4.) Press &quot;Next&quot; &#xA;&#xA;*Important: The user's head must be able to &#xA;be completely still in this position&#xA;&#xA;&#xA;&#x9;&#xA;" HorizontalAlignment="Left" Margin="43,140,0,0" VerticalAlignment="Top" Height="263" Width="285"/>
+        <Label Content="Headrest" HorizontalAlignment="Left" Margin="527,237,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Chair" HorizontalAlignment="Left" Margin="333,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Monitor" HorizontalAlignment="Left" Margin="662,186,0,0" VerticalAlignment="Top" Width="52"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="6" Margin="635,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="17" RenderTransformOrigin="1.267,0.598">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.48"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="11" Margin="633,148,0,0" Stroke="Black" VerticalAlignment="Top" Width="5" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-1.706"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Label Content="Web-cam" HorizontalAlignment="Left" Margin="613,122,0,0" VerticalAlignment="Top" Width="84"/>
+
+    </Grid>
+</Page>

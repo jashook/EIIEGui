@@ -1,0 +1,24 @@
+﻿<Window x:Class="SDGUI4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon= "Images/sauron.gif"
+        Height="600" Width="800"
+        Title="{Binding Path=Content.Title, ElementName=_mainFrame}" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="338*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="_mainFrame" NavigationUIVisibility="Hidden" Navigated="_mainFrame_Navigated" Grid.ColumnSpan="2" Margin="0,0,0,0.5" Cursor="Arrow" >
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" Opacity="0.9" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD7D7D7"/>
+                    <GradientStop Color="#FFA1A9A9" Offset="0.721"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <Image HorizontalAlignment="Left" Height="28" Margin="48,10,0,0" VerticalAlignment="Top" Width="32" Source="Images/Cute-Ball-Help-icon.png" MouseDown="Image_MouseDown" Grid.Column="1"/>
+        <Label Content="Video Based Eye Tracker and Image Stabilizer" HorizontalAlignment="Center" Margin="298,540,154.5,9.5" VerticalAlignment="Center" Width="252" FontSize="9" Height="22"/>
+
+    </Grid>
+</Window>

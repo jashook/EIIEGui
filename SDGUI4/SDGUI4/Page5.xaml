@@ -1,0 +1,20 @@
+﻿<Page x:Class="SDGUI4.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="506" d:DesignWidth="762"
+	Title="Set-up Complete">
+
+    <Grid>
+        <Label Content="Press FINISH to begin experiment. You must NOT move your head after this time." HorizontalAlignment="Left" Margin="170,346,0,0" VerticalAlignment="Top" Height="45" Width="444" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <ProgressBar HorizontalAlignment="Center" Height="16" Margin="158,28,148,0" VerticalAlignment="Top" Width="456" Value="100"/>
+        <Button x:Name="Finish" Content="Finish" HorizontalAlignment="Left" Margin="410,452,0,32" VerticalAlignment="Center" Width="72" Click="Finish_Click" Background="{DynamicResource Brush01}"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="306,452,0,32" VerticalAlignment="Center" Width="72" Background="{DynamicResource Brush01}" Click="Back_Click"/>
+        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="523,334,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Experiment Set-up complete" Margin="306,70,206,409" FontWeight="Bold"/>
+        <Label Content="Press BACK to return to previous page.&#xA;&#xA;" HorizontalAlignment="Left" Margin="287,384,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="249" Margin="248,97,0,0" VerticalAlignment="Top" Width="292" Source="Images/goodjob.jpg"/>
+    </Grid>
+</Page>

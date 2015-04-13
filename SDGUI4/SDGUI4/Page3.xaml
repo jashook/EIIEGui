@@ -1,0 +1,79 @@
+﻿<Page x:Class="SDGUI4.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="506" d:DesignWidth="762"
+	Title="Image Selection">
+
+    <Grid>
+        <Label Content="Please Select an Image" Margin="10,58,502,421" FontWeight="Bold"/>
+        <Button x:Name="Image1" HorizontalAlignment="Left" Margin="536,166,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image1_Click" OverridesDefaultStyle="True" Foreground="{DynamicResource ButtonImage1}" Background="{DynamicResource ButtonImage1}">
+            <Button.BorderBrush>
+                <ImageBrush ImageSource="Images/stereogram1.png"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="Image2" Content="" HorizontalAlignment="Left" Margin="600,166,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image2_Click" OverridesDefaultStyle="True">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Autostereogram_2box_600x400.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Image3" Content="" HorizontalAlignment="Left" Margin="536,216,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image3_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Image3.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Image4" Content="" HorizontalAlignment="Left" Margin="600,216,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image4_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Image4.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Image5" Content="" HorizontalAlignment="Left" Margin="536,266,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image5_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Image5.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Image6" Content="" HorizontalAlignment="Left" Margin="600,266,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image6_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Image6.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Image7" Content="" HorizontalAlignment="Left" Margin="536,316,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image7_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Image7.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Image8" Content="" HorizontalAlignment="Left" Margin="600,316,0,0" VerticalAlignment="Top" Width="60" Height="45" Click="Image8_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Image8.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="ImageControl" HorizontalAlignment="Left" Height="284" Margin="68,114,0,0" VerticalAlignment="Top" Width="428" Source="Images/stereogram1.png" MouseDown="ImageControl_MouseDown" RenderTransformOrigin="0.5,0.5" Stretch="UniformToFill" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.067"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.249"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images/stereogram1.png" Stretch="UniformToFill"/>
+            </Image.OpacityMask>
+        </Image>
+        <Label Content="Click on Preview Screen for Larger Image" HorizontalAlignment="Left" Margin="166,408,0,0" VerticalAlignment="Top" Width="262"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="306,452,0,32" VerticalAlignment="Center" Width="72" Click="Button_Click"/>
+        <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Margin="410,452,0,32" VerticalAlignment="Center" Width="72" Click="Button_Click_1"/>
+        <ProgressBar HorizontalAlignment="Center" Height="15" Margin="158,28,148,0" VerticalAlignment="Top" Width="456" Value="50"/>
+        <Image x:Name="I1" HorizontalAlignment="Left" Height="45" Margin="536,166,0,0" VerticalAlignment="Top" Width="59" MouseDown="I1_MouseDown" Source="Images/stereogram1.png" Stretch="UniformToFill"/>
+        <Image x:Name="I2" HorizontalAlignment="Left" Height="45" Margin="601,166,0,0" VerticalAlignment="Top" Width="59" MouseDown="I2_MouseDown" Source="Images/Autostereogram_2box_600x400.png" Stretch="UniformToFill"/>
+        <Image x:Name="I8" HorizontalAlignment="Left" Height="45" Margin="600,316,0,0" VerticalAlignment="Top" Width="59" MouseDown="I8_MouseDown" Source="Images/Image8.jpg" Stretch="UniformToFill"/>
+        <Image x:Name="I7" HorizontalAlignment="Left" Height="45" Margin="536,316,0,0" VerticalAlignment="Top" Width="59" MouseDown="I7_MouseDown" Source="Images/Image7.png" Stretch="UniformToFill"/>
+        <Image x:Name="I6" HorizontalAlignment="Left" Height="45" Margin="600,266,0,0" VerticalAlignment="Top" Width="59" MouseDown="I6_MouseDown" Source="Themes/IG/Images/Image6.png" Stretch="UniformToFill"/>
+        <Image x:Name="I5" HorizontalAlignment="Left" Height="45" Margin="536,266,0,0" VerticalAlignment="Top" Width="59" MouseDown="I5_MouseDown" Source="Themes/IG/Images/Image5.png" Stretch="UniformToFill"/>
+        <Image x:Name="I4" HorizontalAlignment="Left" Height="45" Margin="601,216,0,0" VerticalAlignment="Top" Width="59" MouseDown="I4_MouseDown" Stretch="UniformToFill" Source="Images/Image4.jpg"/>
+        <Image x:Name="I3" HorizontalAlignment="Left" Height="45" Margin="536,216,0,0" VerticalAlignment="Top" Width="59" MouseDown="I3_MouseDown" Source="Themes/IG/Images/Image3.jpg" Stretch="UniformToFill"/>
+
+    </Grid>
+</Page>
