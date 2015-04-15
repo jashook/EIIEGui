@@ -28,6 +28,7 @@ namespace SDGUI4
         private string OpenGLArguments;
         private string OpenGLExeName;
         private string EyeTrackerExeName;
+        private Page1 page1;
 
         public Page5(String imageName, Page4 page4)
         {
@@ -53,6 +54,12 @@ namespace SDGUI4
             argument_builder.Append(lines[4]);
 
             OpenGLArguments = argument_builder.ToString();
+        }
+
+        public Page5(Page1 page1)
+        {
+            InitializeComponent();
+            this.page1 = page1;
         }
 
         private void Finish_Click(object sender, RoutedEventArgs e)

@@ -30,5 +30,11 @@ namespace SDGUI4
             var nextpage = new Page2(this);
             this.NavigationService.Navigate(nextpage);
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var nextpage = new Page5(this);
+            this.NavigationService.Navigate(nextpage);
+        }
     }
 }
