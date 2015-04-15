@@ -53,3 +53,6 @@ C:\Users\Sara\documents\visual studio 2013\Projects\SDGUI4\SDGUI4\obj\Debug\Page
 C:\Users\Sara\documents\visual studio 2013\Projects\SDGUI4\SDGUI4\obj\Debug\SDGUI4.csprojResolveAssemblyReference.cache
 C:\Users\Sara\Documents\Visual Studio 2013\Projects\SDGUI4\SDGUI4\obj\Debug\experimentexpander.baml
 C:\Users\Sara\Documents\Visual Studio 2013\Projects\SDGUI4\SDGUI4\obj\Debug\experimentexpander.g.cs
+C:\Users\Shook\Source\Repos\EIIE\SDGUI4\SDGUI4\bin\Debug\SDGUI4.exe.config
+C:\Users\Shook\Source\Repos\EIIE\SDGUI4\SDGUI4\obj\Debug\SDGUI4.exe
+C:\Users\Shook\Source\Repos\EIIE\SDGUI4\SDGUI4\obj\Debug\SDGUI4.pdb
