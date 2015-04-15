@@ -23,11 +23,18 @@ namespace SDGUI4
     {
         private Page4 page4;
         public String imageName;
+        private Page1 page1;
         public Page5(String imageName, Page4 page4)
         {
             InitializeComponent();
             this.page4 = page4;
             imageName = imageName;
+        }
+
+        public Page5(Page1 page1)
+        {
+            InitializeComponent();
+            this.page1 = page1;
         }
 
         private void Finish_Click(object sender, RoutedEventArgs e)

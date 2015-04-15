@@ -14,5 +14,6 @@
         <Button Content="Begin Eyetracking Experiment" HorizontalAlignment="Left" Margin="266,447,0,0" VerticalAlignment="Top" Width="252" Click="Button_Click"/>
         <Button Content="Begin Error Estimation" HorizontalAlignment="Left" Margin="266,474,0,0" VerticalAlignment="Top" Width="252"/>
         <Label Content="Welcome. Please select from the options below."  HorizontalAlignment="Left" Margin="266,92,0,0" VerticalAlignment="Top" Width="280" Height="46" FontWeight="Bold"/>
+        <Button Content="Andrew's Button" HorizontalAlignment="Left" Margin="606,469,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click_1"/>
     </Grid>
 </Page>
